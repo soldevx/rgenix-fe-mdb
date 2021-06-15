@@ -7,10 +7,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 import { MDBSpinningPreloader, MDBBootstrapModulesPro, ToastModule } from 'ng-uikit-pro-standard';
+import { SubcribeComponent } from './subcribe/subcribe.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SubcribeComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +22,7 @@ import { MDBSpinningPreloader, MDBBootstrapModulesPro, ToastModule } from 'ng-ui
     HttpClientModule,
     ToastModule.forRoot(),
     MDBBootstrapModulesPro.forRoot(),
+    AppRoutingModule,
   ],
   providers: [MDBSpinningPreloader],
   bootstrap: [AppComponent],
